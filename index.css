@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Poppins:wght@100;200;300;400&family=Roboto+Condensed:ital,wght@1,900&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(19, 18, 18);
+}
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+#calculator {
+    display: flex;
+    color: aliceblue;
+    border-radius: 8px;
+    gap: 2rem;
+    padding: 2rem;
+    flex-direction: column;
+    background-color: rgba(44, 44, 44, 0.856);
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#tittle {
+    font-size: 2.25rem;
+    position: relative;
+}
+#tittle::after {
+    position: absolute;
+    content: '';
+    background-color: rgb(31, 52, 247);
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+.input-box label {
+    font-size: 1.1rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+    align-items: center;
+    background-color: rgba(66, 66, 66, 0.692);
+}
+.input-field span,
+.input-field i {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: white;
+    padding: 0 0.5rem;
+}
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#calculate {
+    background-color: rgb(31, 52, 247);
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+#bmi span:last-child {
+    font-size: 0.875rem;
+    color: #fffffff5;
+}
+
+#descripition {
+    width: 15.5rem;
+}
+
+#more_info {
+    border-top: 1px solid  #ffffff34;
+    padding-top: 1.5rem;
+}
+
+#more_info a {
+    color: rgb(31, 52, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#more_info a:hover {
+    color: aliceblue;
+}
+.hidden {
+    display: none;
+}
+.normal {
+    color: rgb(31, 247, 85);
+}
+.attention {
+    color: red;
+}
+
+
+
+
+
+
